@@ -1,0 +1,39 @@
+{
+  "name": "genpark-post-purchase-milestone-exception-predictor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Post-purchase logistics delivery milestone exception predictor providing proactive delay notifications and compensation credits.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "narvar",
+    "parcellab",
+    "delivery-exception",
+    "post-purchase",
+    "tracking-ai"
+  ],
+  "inputs": {
+    "shipment_id": {
+      "type": "string"
+    },
+    "carrier": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "milestone_id": {
+      "type": "string"
+    },
+    "predicted_delay_hours": {
+      "type": "integer"
+    },
+    "adjusted_eta_timestamp": {
+      "type": "string"
+    },
+    "tracking_milestone_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
